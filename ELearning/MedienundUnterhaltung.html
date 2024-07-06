@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Quiz</title>
+    <link rel="stylesheet" href="MedienundUnterhaltung.css">
+</head>
+<body>
+    <h1>Beziehungen zu Mediencharakteren</h1>
+
+    <div id="video-container">
+        <!-- Video player for introduction -->
+        <video id="intro-video" controls>
+            <source src="SCRIBL_Sound_V01-video-teil1 (2).mp4" type="video/mp4">
+            <p>Dein Browser unterstützt das Video-Tag nicht.</p>
+        </video>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+        <!-- Questions and options will be dynamically inserted here -->
+    </div>
+
+    <!-- Button for submitting answers -->
+    <button id="submit-button" class="hidden" onclick="submitAllAnswers()">Antworten bestätigen</button>
+
+    <!-- Container for congratulation message and final video -->
+    <div id="message-and-video-container" class="hidden">
+        <div id="congrats-message">
+            <!-- Congratulation message will be inserted here -->
+        </div>
+        <div id="final-video-container">
+            <video id="final-video" controls>
+                <source src="SCRIBL_Sound_V01-video-teil2 (2).mp4" type="video/mp4">
+                <p>Dein Browser unterstützt das Video-Tag nicht.</p>
+            </video>
+        </div>
+    </div>
+
+    <!-- Button for retrying the quiz -->
+    <button id="retry-button" class="hidden" onclick="retryQuiz()">Erneut versuchen</button>
+
+    <script src="MedienundUnterhaltung.js"></script>
+</body>
+</html>
